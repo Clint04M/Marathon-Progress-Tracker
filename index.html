@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marathon Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Marathon Progress Tracker</h1>
+    <div class="slogan">🏃‍♂️ Every Step Counts. Go Beyond Limits! 🏃‍♀️</div>
+    <form id="marathonForm">
+        <label for="totalDistance">Total Distance (km):</label>
+        <input type="number" id="totalDistance" name="totalDistance" value="50" min="1" required><br>
+        
+        <label for="coveredDistance">Covered Distance (km):</label>
+        <input type="number" id="coveredDistance" name="coveredDistance" min="0" step="0.01" required><br>
+        
+        <label for="elapsedTime">Elapsed Time (hours):</label>
+        <input type="number" id="elapsedTime" name="elapsedTime" min="0" step="0.01" required><br>
+        
+        <label for="targetTime">Target Time (hours):</label>
+        <input type="number" id="targetTime" name="targetTime" min="0.1" step="0.01" required><br>
+        
+        <button type="button" onclick="submitData()">Calculate Progress</button>
+    </form>
+    <div id="results"></div>
+    <div id="errorMsg" class="error"></div>
+    <script src="marathon.js"></script>
+</body>
+</html>

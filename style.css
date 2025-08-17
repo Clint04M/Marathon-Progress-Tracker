@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #7B1FA2 0%, #4A148C 90%);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    margin-top: 44px;
+    margin-bottom: 6px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 0 5px 20px rgba(74,20,140,0.15);
+}
+.slogan {
+    color: #E1BEE7;
+    font-size: 1.2em;
+    margin-bottom: 36px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-shadow: 0 2px 10px rgba(123,31,162,0.10);
+}
+
+form {
+    background: #fff;
+    border-radius: 18px;
+    padding: 34px 32px 20px 32px;
+    box-shadow: 0 8px 32px rgba(74,20,140,0.12);
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #5E388C;
+    font-size: 1.03em;
+    letter-spacing: 0.2px;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 10px 8px;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 1.3px solid #C4AED8;
+    box-sizing: border-box;
+    font-size: 1.05em;
+    background: #F3EAFB;
+    transition: border .2s;
+}
+
+input[type=number]:focus {
+    border: 2px solid #7B1FA2;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 28px;
+    background: linear-gradient(90deg, #7B1FA2 30%, #4A148C 100%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.18em;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(74,20,140,0.09);
+    transition: background 0.13s;
+}
+button:hover {
+    background: linear-gradient(90deg, #8E24AA 30%, #311B92 100%);
+}
+
+#errorMsg {
+    color: #d32f2f;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+#results {
+    max-width: 390px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(80,23,180,0.09);
+    margin: 22px 0;
+    background: #faf6ff;
+    padding: 20px 26px;
+    font-size: 1.2em;
+    color: #4A148C;
+    font-weight: 600;
+    transition: background 0.15s;
+    text-align: center;
+}
+
+/* Progress bar style */
+.progress-container {
+    width: 100%;
+    background: #EEE4FA;
+    border-radius: 8px;
+    height: 20px;
+    margin: 16px 0 8px 0;
+    overflow: hidden;
+    box-shadow: 0 1px 5px #ddd4;
+    display: block;
+}
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #00C6A7 0%, #1E87F0 100%);
+    width: 0%;
+    transition: width 0.6s cubic-bezier(.93,.12,.82,.99);
+}
+
+@media (max-width: 500px) {
+    form, #results { max-width: 94vw; padding: 18px; }
+    h1 { font-size: 2em; margin-top: 18px; }
+    .slogan { font-size: 1em; }
+}
